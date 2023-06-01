@@ -1,0 +1,1641 @@
+header {
+    .logoHeader {
+        margin: 15px 0px;
+        text-align: center;
+    }
+
+    nav {
+        ul {
+            background-color: black;
+            justify-content: space-around;
+
+            a {
+                display: block;
+                color: white;
+                font-size: 22px;
+                padding: 12px 0px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: all 300ms;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #56070C;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        nav {
+          ul {
+            flex-direction: column;
+    
+            li {
+              margin-top: 10px;
+              margin: auto;
+            }
+          }
+        }
+      }
+}
+//edito ale
+
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-box {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-message {
+    font-size: 28px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.alert-button {
+    padding: 8px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.alert-button:hover {
+    background-color: green;
+}
+
+//Editar los confirm 
+
+.confirm-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .confirm-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .confirm-message {
+    margin-bottom: 10px;
+  }
+
+  .confirm-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .confirm-button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .confirm-button:hover {
+    background-color: #0056b3;
+  }
+
+
+  //FInal
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/sld1.jpg");
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+
+    .formBusqueda {
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+        width: 30%;
+        padding: 25px;
+        label {
+            margin-right: 15px;
+            font-size: 18px;
+        }
+
+        input {
+            border: 2px solid #ced6e0;
+            margin: 10px 0px;
+            font-size: 18px;
+            height: 40px;
+            width: 100%;
+            padding: 5px 12px;
+            transition: all .3s easy;
+            border-radius: 5px;
+
+            &:hover {
+                border: 2px solid #56070C;
+            }
+
+            &:focus {
+                outline: none;
+                border: 2px solid #56070C;
+                box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, 0.3);
+            }
+        }
+    }
+
+    .pedidos {
+        width: 100%;
+        margin: 20px 0px;
+        justify-content: space-between;
+
+        >div {
+            width: 50%;
+            margin: 20px auto;
+            border: 3px solid #56070C;
+            border-radius: 5px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                text-align: center;
+                font-size: 34px;
+            }
+
+            >p {
+                width: 100%;
+                text-align: center;
+                font-size: 24px;
+                margin: 15px 0px;
+            }
+
+            a {
+                width: 35%;
+                margin: 20px 0px;
+                display: block;
+                padding: 8px 0px;
+                background-color: black;
+                text-align: center;
+                border-radius: 5px;
+                font-weight: bold;
+                color: white;
+                letter-spacing: 1px;
+                font-size: 19px;
+                transition: all 370ms;
+                border: 0px;
+
+                &:hover {
+                    background-color: #56070C;
+                    color: black;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .pedido {
+            width: 25%;
+            border: 3px solid #56070C;
+            border-radius: 5px;
+            padding: 7px 0px;
+            margin: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 80%;
+            }
+
+            a {
+                width: 35%;
+                margin: 20px 0px;
+                display: block;
+                padding: 8px 0px;
+                background-color: black;
+                text-align: center;
+                border-radius: 5px;
+                font-weight: bold;
+                color: white;
+                letter-spacing: 1px;
+                font-size: 19px;
+                transition: all 370ms;
+                border: 0px;
+
+                &:hover {
+                    background-color: #56070C;
+                    color: black;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+
+            .nombre {
+                color: black !important;
+                font-size: 16px;
+                padding: 0px;
+                background: none;
+                width: 100%;
+
+                &:hover {
+                    background: none;
+                    color: black;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .mensajeCompra {
+        width: 60%;
+        margin: 20px auto;
+        border: 3px solid #56070C;
+        border-radius: 5px;
+        padding: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 30px;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 7px 0px;
+        }
+
+        h2 {
+            margin: 15px 0px;
+            font-size: 26px;
+            letter-spacing: 1.5px;
+        }
+
+        a {
+            width: 30%;
+            margin: 20px 0px;
+            display: block;
+            padding: 8px 0px;
+            background-color: black;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+            font-size: 19px;
+            transition: all 370ms;
+            border: 0px;
+
+            &:hover {
+                background-color: #56070C;
+                color: black;
+                border-radius: 10px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .carrito {
+        justify-content: space-around;
+
+        .containerTarjeta {
+            width: 70%;
+            padding: 12px;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .active {
+                transform: rotateY(180deg) !important;
+            }
+
+            .tarjeta {
+                width: 100%;
+                max-width: 400px;
+                position: relative;
+                color: white;
+                transition: .3s ease all;
+                transform: rotateY(0deg);
+                transform-style: preserve-3d;
+                cursor: pointer;
+                z-index: 2;
+
+                >div {
+                    padding: 12px 20px;
+                    border-radius: 5px;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    box-shadow: 0px 10px 10px 0px rgba(90, 116, 148, 0.3);
+                    font-size: 13px;
+                }
+
+                .parteDelante {
+                    width: 100%;
+                    background: url(../images/tarjeta/bg-tarjeta/bg-tarjeta-01.jpg);
+                    background-size: cover;
+
+                    .logoMarca {
+                        text-align: right;
+                        max-height: 40 px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            max-width: 60px;
+                        }
+                    }
+
+                    .chip {
+                        width: 100%;
+                        max-width: 30px;
+                    }
+
+                    .datosTarjeta {
+                        .grupo {
+                            margin: 7px 0px;
+
+                            .label {
+                                color: #7b7b7b;
+                                font-weight: bold;
+                                margin-bottom: 5px;
+                            }
+
+                            .numero,
+                            .nombre,
+                            .expiracion {
+                                color: white;
+                                font-size: 16px;
+                                text-transform: uppercase;
+                                letter-spacing: 1.5px;
+                            }
+                        }
+
+                        .row {
+                            justify-content: space-between;
+
+                            #nombreTitular {
+                                width: 60%;
+                            }
+
+                            #containerExpiracion {
+                                width: 30%;
+                            }
+                        }
+
+                    }
+                }
+
+                .parteTrasera {
+                    width: 100%;
+                    background: url(../images/tarjeta/bg-tarjeta/bg-tarjeta-01.jpg);
+                    background-size: cover;
+                    position: absolute;
+                    top: 0;
+                    transform: rotateY(180deg);
+                    backface-visibility: hidden;
+
+                    .barraMagnetica {
+                        width: 100%;
+                        background-color: #555;
+                        min-height: 20px;
+                        position: absolute;
+                        top: 30px;
+                        left: 0;
+                    }
+
+                    .datosTarjeta {
+                        margin-top: 40px;
+                        justify-content: space-between;
+                        font-size: 16px;
+
+                        p {
+                            margin-top: 6px;
+                        }
+
+                        .label {
+                            padding-left: 2px;
+                            font-weight: bold;
+                        }
+
+                        #firma {
+                            width: 70%;
+
+                            .firma {
+                                height: 30px;
+                                background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+
+                                p {
+                                    line-height: 25px;
+                                    padding-left: 14px;
+                                    font-family: "Liu Jian Mao Cao", cursive;
+                                    font-size: 25px;
+                                    color: black;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+
+                        #ccv {
+                            width: 20%;
+
+                            .ccv {
+                                background-color: white;
+                                height: 30px;
+                                color: black;
+                                text-align: center;
+                                line-height: 30px;
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .btnAbrirForm {
+            width: 40px;
+            height: 40px;
+            font-size: 19px;
+            line-height: 20px;
+            background-color: #2374d2;
+            position: relative;
+            top: -20px;
+            z-index: 3;
+            border-radius: 100%;
+            box-shadow: 5px 4px 8px rgba(24, 56, 182, 0.4);
+            color: white;
+            padding: 5px;
+            transition: all .2s ease;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1850b1;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .formTarjeta {
+            background-color: #FCF6F5;
+            padding: 150px 30px 30px 30px;
+            width: 100%;
+            border: 1px solid black;
+            max-width: 700px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            top: -120px;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: clip-path .3s ease-out;
+
+            .error {
+                color: red;
+                margin: 10px 0px;
+                font-size: 18px;
+                padding-left: 5px;
+            }
+
+            label {
+                display: block;
+                color: #7d8994;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            input,
+            select {
+                border: 2px solid #ced6e0;
+                font-size: 18px;
+                height: 40px;
+                width: 100%;
+                padding: 5px 12px;
+                transition: all .3s easy;
+                border-radius: 5px;
+
+                &:hover {
+                    border: 2px solid #56070C;
+                }
+
+                &:focus {
+                    outline: none;
+                    border: 2px solid #56070C;
+                    box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, 0.3);
+                }
+            }
+
+            input {
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+
+            .buttons {
+                margin: 20px 0px;
+                justify-content: space-between;
+
+                button,
+                a {
+                    width: 30%;
+                    display: block;
+                    padding: 8px 0px;
+                    background-color: black;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    color: white;
+                    letter-spacing: 1px;
+                    font-size: 19px;
+                    transition: all 370ms;
+                    border: 0px;
+
+                    &:hover {
+                        background-color: #56070C;
+                        color: white;
+                        border-radius: 10px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            >.row {
+                justify-content: space-between;
+
+                #grupoExpiracion {
+                    width: 68%;
+
+                    .row {
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .select {
+                            width: 48%;
+                            position: relative;
+
+                            &:hover {
+                                i {
+                                    color: #93bfed;
+                                }
+                            }
+
+                            // select {
+                            //     -webkit-appearance: none;
+
+                            // }
+
+                            i {
+                                position: absolute;
+                                color: #ced6e0;
+                                top: 13px;
+                                right: 15px;
+                                transition: all .1s ease;
+                            }
+                        }
+                    }
+
+                }
+
+                .ccv {
+                    width: 30%;
+                }
+            }
+        }
+
+        .activeForm {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+        }
+
+        .activeBtn {
+            transform: rotate(45deg);
+        }
+
+        .novedades {
+            width: 70%;
+        }
+
+        >h1 {
+            margin: 20px 0px;
+        }
+
+        .factura {
+            width: 25%;
+            padding: 12px;
+            border: 3px solid #56070C;
+            border-radius: 5px;
+
+            .albumFactura {
+                margin: 12px 0px;
+                justify-content: space-around;
+
+                .nombre {
+                    width: 70%;
+                }
+
+                .precio {
+                    font-weight: bold;
+                    color: red;
+                }
+            }
+
+            hr {
+                width: 95%;
+                margin: 10px auto;
+                border: 1px solid #56070C;
+            }
+
+            .total {
+                margin: 12px 0px;
+                justify-content: space-around;
+
+                h3 {
+                    width: 70%;
+                }
+
+                .precio {
+                    font-weight: bold;
+                    color: red;
+                }
+            }
+
+            .comprar {
+                display: block;
+                width: 50%;
+                margin: 40px auto;
+                padding: 11px 0px;
+                background-color: black;
+                text-align: center;
+                border-radius: 5px;
+                font-weight: bold;
+                color: white;
+                letter-spacing: 1px;
+                font-size: 19px;
+                transition: all 370ms;
+
+                &:hover {
+                    background-color: #56070C;
+                    color: black;
+                    border-radius: 10px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .filaProduct {
+        justify-content: space-between;
+        margin: 25px 0px;
+        
+        @media only screen and (max-width: 768px) {
+            .divImagen {
+                width: 100% !important;
+            }
+            img {
+                width: 100% !important;
+            }
+            .divDatos {
+                width: 100% !important;
+                text-align: center;
+
+                .btnCarrito {
+                    
+                    width: 100% !important;
+
+                    
+                }
+            }
+        }
+        .divImagen {
+            width: 40%;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        .divDatos {
+            width: 55%;
+
+            h2 {
+                text-decoration: underline;
+                text-align: center;
+            }
+
+            hr {
+
+                width: 80%;
+                margin: 15px auto;
+                border: 2px solid #56070C;
+            }
+
+            .datos {
+                width: 80%;
+                margin: 10px auto;
+                padding-left: 12px;
+
+                p {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+
+                .cantidad {
+                    span {
+                        color: #56070C;
+                    }
+                }
+
+                .precio {
+                    font-size: 26px;
+                    color: red;
+                    font-weight: bold;
+                }
+
+                .btnCarrito {
+                    display: block;
+                    background-color: black;
+                    color: white;
+                    font-size: 16px;
+                    margin: 15px 0px;
+                    padding: 7px 0px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    transition: all 300ms;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    width: 40%;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #56070C;
+                        color: black;
+                    }
+                }
+
+                .agotado {
+                    display: block;
+                    margin-top: 6px;
+                    width: 50%;
+                    padding: 11px 0px;
+                    background-color: #EA402B;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    color: white;
+                    letter-spacing: 1px;
+                    font-size: 19px;
+                    transition: all 370ms;
+
+                    &:hover {
+                        cursor: not-allowed !important;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .filaProductos {
+        justify-content: space-between;
+        margin: 25px 0px;
+        @media only screen and (max-width: 768px) {
+            margin: auto;
+            h1 {
+                text-align: center;
+            }
+            
+            .categorias {
+                .tipos {
+                    width: 50%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+        
+                .pais {
+                    width: 50%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+            }
+            .novedades {
+                width: 100% !important;
+    
+                a {
+                    width: 62% !important;
+                }
+            }
+
+        }
+        
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .categorias {
+            
+            @media only screen and (max-width: 768px) {
+                width: 100% !important;
+                margin: auto;
+                
+                display: flex;
+                .secciones {
+                    width: 50%;
+                }
+                .pais {
+                    width: 50%;
+                }
+            }
+            @media only screen and (max-width: 425px) {
+                width: 100% !important;
+                margin: auto;
+                
+                display: flex;
+                .secciones {
+                    width: 50%;
+                }
+                .pais {
+                    width: 50%;
+                }
+            }
+            width: 27%;
+
+            .secciones {
+                li {
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            ul {
+                margin-top: 40px;
+
+                li {
+                    font-size: 18px;
+                    margin: 15px 0px;
+                    transition: all 300ms;
+                    &:hover {
+                        cursor: pointer;
+                        
+                    }
+                }
+                
+            }
+
+            nav {
+                ul {
+                    a {
+                        display: block;
+                        background-color: black;
+                        color: white;
+                        font-size: 16px;
+                        margin: 15px 0px;
+                        padding: 7px 0px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        transition: all 300ms;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        width: 80%;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #56070C;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .novedades {
+            width: 70%;
+
+            a {
+                width: 62% !important;
+            }
+        }
+    }
+
+    .adminSection {
+        margin: 25px 0px;
+        justify-content: space-between;
+
+        .formularioSection {
+            border: 3px solid #56070C;
+            padding: 25px;
+            border-radius: 5px;
+
+            form {
+                margin-top: 25px;
+
+                input[type="text"] {
+                    height: 40px;
+                    padding: 15px;
+                    font-size: 14px;
+                    width: 60%;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-bottom: 25px;
+                    -webkit-transition: all 300ms;
+                    transition: all 300ms;
+
+                    &:focus {
+                        outline: none;
+                        border: 3px solid #56070C;
+                    }
+                }
+
+                input[type="submit"] {
+                    height: 40px;
+                    font-size: 14px;
+                    width: 60%;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin: 20px 0px;
+                    -webkit-transition: all 300ms;
+                    transition: all 300ms;
+                    text-align: center;
+                    background-color: black;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+
+                    &:hover {
+                        border-radius: 10px;
+                        cursor: pointer;
+                        background-color: #56070C;
+                        color: white;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        div {
+
+            width: 40%;
+
+            nav {
+                margin-left: 25px;
+
+                ul {
+                    a {
+                        display: block;
+                        background-color: black;
+                        color: white;
+                        font-size: 16px;
+                        margin: 15px 0px;
+                        padding: 7px 0px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        transition: all 300ms;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        width: 50%;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #56070C;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            img {
+                width: 88%;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .quienesSomos {
+        h1 {
+            margin: 10px 0px;
+        }
+
+        p {
+            margin: 20px 0px;
+        }
+
+        .filas {
+            margin: 15px 0px;
+            @media only screen and (max-width: 768px) {
+                .imagenLogo {
+                    width: 100% !important;
+                }
+                .fila1{
+                    width: 100% !important;
+                }
+                .nuestraHIstoria{
+                    width: 100% !important;
+                }
+                .textoss {
+                    width: 100% !important;
+
+                    img {
+                        width: 100%;
+                        margin: 27px auto;
+                    }
+                }
+            }
+
+            .fila1 {
+                justify-content: space-between;
+                margin: 25px 0px;
+
+                .imagenLogo {
+                    text-align: center;
+                }
+
+                >div {
+                    width: 40%;
+
+                    img {
+                        width: 100%;
+                        margin: 27px auto;
+                    }
+                }
+            }
+
+            .fila2 {
+                justify-content: space-between;
+                margin: 25px 0px;
+
+                .imagenLogo {
+                    text-align: center;
+                }
+
+                >div {
+                    width: 40%;
+
+                    img {
+                        width: 80%;
+                        margin: 0px auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .condicionesGenerales {
+        h1 {
+            margin: 15px 0px;
+        }
+
+        p {
+            margin: 20px 0px;
+        }
+
+        h3 {
+            margin: 15px 0px;
+        }
+    }
+
+    .catas {
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin: auto;
+            .imfg{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+        }
+        justify-content: space-between;
+        margin: 20px 0px;
+
+        h1 {
+            margin: 15px 0px;
+        }
+
+        p {
+            margin: 20px 0px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .datosEmpresa {
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            width: 38%;
+
+            ul {
+                margin-left: 50px;
+                list-style: disc;
+
+                li {
+                    margin: 12px 0px;
+                }
+            }
+
+            .redesSociales {
+                margin-left: 30px;
+
+                div {
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .maps {
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            width: 50%;
+            text-align: center;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .interior {
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+        margin: 25px 0px;
+        width: 50%;
+        
+    }
+
+    .intro {
+        margin: 30px 0px;
+        justify-content: space-around;
+
+        .uno {
+            background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url("../images/vino1.jpg");
+        }
+        @media only screen and (max-width: 768px) {
+            .uno, .dos, .tres {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+
+        .dos {
+            background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url("../images/vino2.jpg");
+        }
+
+        .tres {
+            background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url("../images/vino3.jpg");
+            background-position: 80% 50% !important;
+        }
+
+        article {
+            width: 30%;
+            border-radius: 5px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            transition: all 300ms;
+
+            &:hover {
+                border-radius: 13px;
+            }
+
+            background-position: 80% 90%;
+
+            h1 {
+                background-color: white;
+                padding: 10px;
+                color: black;
+                font-size: 23px;
+                letter-spacing: 1px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+
+            hr {
+                width: 200px;
+                border: 1px solid white;
+                margin: 12px 0px;
+            }
+
+            p {
+                background-color: white;
+                color: black;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                padding: 7px;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .novedades {
+        
+          
+        .vinosNovedades {
+            justify-content: space-between;
+            align-items: center;
+            @media only screen and (max-width: 768px) {
+                .vinoNuevo {
+                    width: 90% !important;
+                    p{
+                        font-size: 24px !important;
+                        font-weight: 500;
+
+                    }
+                    a{
+                        img{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+            
+
+            
+            
+            .vinoNuevo {
+                width: 20%;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    margin: 6px 0px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+
+                a {
+                    width: 100% !important;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .precio {
+                    font-size: 18px;
+                    color: red;
+                }
+
+                .comprar {
+                    display: block;
+                    margin-top: 6px;
+                    width: 50%;
+                    padding: 11px 0px;
+                    background-color: black;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    color: white;
+                    letter-spacing: 1px;
+                    font-size: 19px;
+                    transition: all 370ms;
+
+                    &:hover {
+                        background-color: #56070C;
+                        color: white;
+                        border-radius: 10px;
+                        font-weight: bold;
+                    }
+                }
+
+                .agotado {
+                    display: block;
+                    margin-top: 6px;
+                    width: 50%;
+                    padding: 11px 0px;
+                    background-color: #EA402B;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    color: white;
+                    letter-spacing: 1px;
+                    font-size: 19px;
+                    transition: all 370ms;
+
+                    &:hover {
+                        cursor: not-allowed !important;
+                    }
+                }
+
+                .agotado {
+                    display: block;
+                    margin-top: 6px;
+                    width: 50%;
+                    padding: 11px 0px;
+                    background-color: #EA402B;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    color: white;
+                    letter-spacing: 1px;
+                    font-size: 19px;
+                    transition: all 370ms;
+
+                    &:hover {
+                        cursor: not-allowed !important;
+                    }
+                }
+            }
+
+            .filaDatos {
+                @media only screen and (max-width: 768px) {
+                    width: 100% !important;
+                    margin: auto;
+                    align-items: center;
+                    text-align: center;
+                    
+                }
+                width: 45% !important;
+                border: 1px solid black;
+                padding: 25px;
+                padding-top: 10px;
+                width: 45%;
+                border-radius: 5px;
+
+                h2 {
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    font-size: 18px;
+                    margin: 15px 0px;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+
+                .cantidad {
+                    span {
+                        color: #56070C;
+                    }
+                }
+
+                .precio {
+                    font-size: 26px;
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+
+            .filaFormulario {
+                @media only screen and (max-width: 768px) {
+                    width: 100% !important;
+                    margin: auto !important;
+                    align-items: center;
+                    text-align: center;
+                    
+                }
+                border: 3px solid #56070C;
+                padding: 25px;
+                padding-top: 10px;
+                width: 45%;
+                border-radius: 5px;
+
+                form {
+                    margin-top: 25px;
+
+                    h2 {
+                        margin-bottom: 25px;
+                    }
+
+                    input[type="text"] {
+                        height: 40px;
+                        padding: 15px;
+                        font-size: 14px;
+                        width: 60%;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        margin-bottom: 25px;
+                        -webkit-transition: all 300ms;
+                        transition: all 300ms;
+
+                        &:focus {
+                            outline: none;
+                            border: 3px solid #56070C;
+                        }
+                    }
+
+                    input[type="submit"] {
+                        height: 40px;
+                        font-size: 14px;
+                        width: 60%;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        margin: 20px 0px;
+                        -webkit-transition: all 300ms;
+                        transition: all 300ms;
+                        text-align: center;
+                        background-color: black;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: bold;
+
+                        &:hover {
+                            border-radius: 10px;
+                            cursor: pointer;
+                            background-color: #56070C;
+                            color: white;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dondeQuien {
+    margin: 50px 0px;
+    justify-content: space-around;
+
+    article {
+        width: 40%;
+        height: 300px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed, scroll;
+
+        h1 {
+            font-size: 22px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        a {
+            display: block;
+            width: 50%;
+            margin-top: 15px;
+            padding: 11px 0px;
+            background-color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            color: black;
+            letter-spacing: 1px;
+            font-size: 19px;
+            transition: all 370ms;
+
+            &:hover {
+                background-color: #56070C;
+                color: white;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .primero {
+        background-image: url("../images/whereWho1.jpg");
+    }
+
+    .segundo {
+        background-image: url("../images/whereWho2.jpeg");
+    }
+
+    @media only screen and (max-width: 768px) {
+        article {
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+
+    .containerFooter {
+        width: 93%;
+        margin: auto;
+        justify-content: space-between;
+
+        nav {
+            ul {
+                background-color: black;
+
+                a {
+                    display: block;
+                    color: white;
+                    font-size: 16px;
+                    padding: 7px 0px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: all 300ms;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #56070C;
+                    }
+                }
+            }
+        }
+
+        div {
+            color: white;
+
+            p {
+                font-size: 16px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-top: 7px;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+
+    hr {
+        width: 95%;
+        margin: 20px auto;
+        border: 1px solid white;
+    }
+
+    >div {
+        >p {
+            text-align: center;
+            font-size: 16px;
+            color: white;
+        }
+    }
+}
